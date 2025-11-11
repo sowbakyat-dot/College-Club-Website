@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrepreneurship Development Cell</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    /* HEADER SECTION */
+    .header {
+        background-color: #f6b100; /* orange-yellow shade */
+        color: white;
+        text-align: left;
+        padding: 60px 80px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .header::after {
+        content: "";
+        background: url("gears.png") no-repeat right top;
+        background-size: 250px;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 50px 10%;
+        gap: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 1.8;
+        width: 80%;
+    }
+
+    .middle-img {
+        width: 450px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.4s ease;
+    }
+
+    .middle-img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Bottom graphic */
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .bottom-img {
+        width: 300px;
+        margin: 20px 0;
+    }
+
+    .bottom-text {
+        font-size: 17px;
+        width: 80%;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Back button */
+    .back-btn {
+        display: inline-block;
+        background: #f6b100;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: background 0.3s;
+        margin: 30px 0;
+    }
+
+    .back-btn:hover {
+        background: #d99500;
+    }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Entrepreneurship<br>Development Cell</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+    <p>
+        To create awareness about entrepreneurship as a career option.  
+        To develop skills among students and support them in turning ideas into startups.
+    </p>
+
+    <img src="C:\Users\Lenovo\OneDrive\Documents\javascript.html\images (1).jpg" alt="Entrepreneurship ideas" class="middle-img">
+
+    <div class="bottom-section">
+        
+        <p class="bottom-text">
+            Opportunity to learn directly from entrepreneurs.  
+            Developing leadership, risk-taking, and problem-solving skills.
+        </p>
+    </div>
+
+    <a href="registration.html" class="back-btn">← Back to Clubs</a>
+</div>
+
+<!-- OPTIONAL: Small fade-in animation -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = 0;
+    setTimeout(() => {
+        document.body.style.transition = "opacity 1s ease-in";
+        document.body.style.opacity = 1;
+    }, 100);
+});
+</script>
+
+</body>
+</html>

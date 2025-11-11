@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Together We Rise</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: url("one image.jpg") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.35);
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        z-index: 2;
+        display: flex;
+        gap: 30px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #ffd700;
+    }
+
+    .left-text {
+        position: absolute;
+        left: 60px;
+        bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+        font-family: 'Georgia', serif;
+    }
+
+    .left-text h1 {
+        font-size: 45px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+
+    .login-box {
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        text-align: center;
+        width: 300px;
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 10px;
+        background: #ffd700;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .login-box button:hover {
+        background: #ffce00;
+    }
+
+    .google-btn {
+        margin-top: 15px;
+        background: white;
+        color: #333;
+    }
+
+    .google-btn:hover {
+        background: #eaeaea;
+    }
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="navbar">
+    <a href="#">Registration ▾</a>
+    <a href="#">Clubs ▾</a>
+    <a href="#">Log in</a>
+</div>
+
+<div class="left-text">
+    <h1>Together we<br>Lead</h1>
+    <h1>together we<br>Rise</h1>
+</div>
+
+<div class="login-box">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="studentId" placeholder="Student ID number">
+    <button onclick="register()">Submit</button>
+    <button class="google-btn">Continue with Google</button>
+</div>
+
+<script>
+function register() {
+    let name = document.getElementById("name").value;
+    let id = document.getElementById("studentId").value;
+
+    if (name.trim() === "" || id.trim() === "") {
+        alert("Please fill all fields!");
+    } else {
+        alert("Registration successful!");
+       
+        window.location.href = "home page .html";
+    }
+}
+</script>
+
+</body>
+</html>
+
+

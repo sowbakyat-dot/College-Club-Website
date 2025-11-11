@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .register {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .cancel {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Registration</h2>
+    <form id="regForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="studentId">Student ID Number:</label>
+      <input type="text" id="studentId" name="studentId" required>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="">Choose department</option>
+        <option>B.E. / B.Tech</option>
+        <option>B.Sc</option>
+        <option>B.Com</option>
+        <option>Other</option>
+      </select>
+
+      <label for="year">Year:</label>
+      <select id="year" name="year" required>
+        <option value="">Year</option>
+        <option>1st</option>
+        <option>2nd</option>
+        <option>3rd</option>
+        <option>4th</option>
+      </select>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="club">Club Name:</label>
+      <input type="text" id="club" name="club" required>
+
+      <div class="buttons">
+        <button type="button" class="register" onclick="submitForm()">Register</button>
+        <button type="button" class="cancel" onclick="cancelForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function submitForm() {
+      alert("Registration submitted successfully!");
+      window.location.href = "home page .html"; 
+    }
+
+    function cancelForm() {
+      if (confirm("Are you sure you want to cancel?")) {
+        window.location.href = "home page .html"; 
+      }
+    }
+  </script>
+
+</body>
+</html>

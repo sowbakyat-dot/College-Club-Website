@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clubs — Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender;
+      color: #222;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .image-box {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+    }
+
+    .club-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .club-item {
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .club-item:hover {
+      background-color: #ddd;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 14px;
+      color: #666;
+      cursor: pointer;
+    }
+
+    .footer:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section-title">Clubs</div>
+
+    <div class="image-box">
+      <img src="asian-indian-college-students.webp" alt="Club photo">
+    </div>
+
+    <div class="description">
+      <strong>CLUBS</strong><br><br>
+      Energetic, like-minded teams working to make a difference.<br>
+      Follow your passion and love for music, dance, theatre, media or tech.<br>
+      We bring students together to create, share and learn — simple as that.
+    </div>
+
+    <div class="club-list">
+      <div class="club-item" onclick="goToPage('dance club.html')">Fine Arts</div>
+      <div class="club-item" onclick="goToPage('co sports club.html')">Sports Club</div>
+      <div class="club-item" onclick="goToPage('co tamil mandram.html')">Tamil Mandram</div>
+      <div class="club-item" onclick="goToPage('club me.html')">Entrepreneurship</div>
+      <div class="club-item" onclick="goToPage('co grooming.html')">Grooming</div>
+    </div>
+
+    <div class="footer" onclick="goBack()">Back</div>
+  </div>
+
+  <script>
+    function goToPage(page) {
+    
+      window.location.href = page;
+    }
+
+    function goBack() {
+     
+          window.location.href = "home page .html" ;
+    }
+  </script>
+
+</body>
+</html>
+
